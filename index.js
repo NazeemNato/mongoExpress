@@ -4,12 +4,14 @@ const bodyparser = require('body-parser')
 require('dotenv/config')
 const cors = require('cors');
 const userRoute = require('./routes/users.js')
+const urlRoute = require('./routes/urls.js')
 // Express
 var app = express()
 app.use(bodyparser.json())
 app.use(cors())
 
 app.use('/users',userRoute)
+app.use('/urls',urlRoute)
 
 app.get('/',(req,res)=>{
 	res.send({message: 'Hi bro'})
