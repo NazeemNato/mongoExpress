@@ -5,5 +5,5 @@ Simple MongoDB rest api template
 
 - GET
 - POST
-- UPDATE
+- PATCH
 - DELETE
